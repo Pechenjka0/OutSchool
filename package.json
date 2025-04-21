@@ -1,0 +1,14 @@
+{
+  "name": "tailwind-starter",
+  "version": "1.0.0",
+  "description": "Startup Tailwind Template",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./input.css -o ./css/main.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.4"
+  }
+}
