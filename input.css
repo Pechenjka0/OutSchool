@@ -1,1 +1,92 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@layer base {
+    html,
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    a {
+        display: inline-block;
+    }
+}
+
+@layer utilities {
+    .font-poppins {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .font-montserrat {
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+@layer components {
+    .hero-gradient {
+        background: linear-gradient(110deg, #4923b4 0%, #e878cf 100%);
+    }
+
+    .text-accent {
+        color: #5027B5;
+    }
+
+    .text-pink {
+        color: #AC85FF;
+    }
+
+    .text-light-gray {
+        color: #787878;
+    }
+
+    .text-dark-gray {
+        color: #666768;
+    }
+}
